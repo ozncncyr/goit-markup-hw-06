@@ -1244,8 +1244,9 @@ section{
     .modal-window{
         padding: 72px 16px 24px 16px;
         min-height: 623px;
-        width: calc(100% * 0.9 );
-        border-radius: 4px; 
+        /* width: calc(100% - (32px + (calc((100% - 320px) / 2.5)))); */
+        width: calc(100% * 0.9);
+        max-width: 385px;
     }
 
 }
