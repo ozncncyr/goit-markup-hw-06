@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>GoIT Markup HW - #05</title>
+    <title>GoIT Markup HW - #06</title>
     <!----- Edited by "ozncncyr" ----->
   </head>
   <body>
@@ -47,7 +47,7 @@
           </div>
         </nav>
         <!----- Contact ----->
-        <div class="header-concact-container">
+        <div class="header-contact-container">
           <address class="header-contact">
             <ul class="contact-list">
               <li class="list-item">
@@ -61,6 +61,16 @@
             </ul>
           </address>
         </div>
+        <!----- Menu Button ----->
+        <button
+          type="button"
+          class="mobile-menu-button"
+          onclick="document.getElementById('mobile-menu').style.display='block'"
+        >
+          <svg width="24" height="24" class="mobile-menu-icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -554,6 +564,73 @@
           </div>
           <button type="submit" class="modal-submit-button button">Send</button>
         </form>
+      </div>
+    </div>
+    <!----- Mobile Menu ----->
+    <div class="mobile-menu" id="mobile-menu">
+      <button
+        type="button"
+        class="modal-close-button"
+        onclick="document.getElementById('mobile-menu').style.display='none'"
+      >
+        <svg class="modal-close-button-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-window"></use>
+        </svg>
+      </button>
+      <div class="mm-container">
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="list-item">
+              <a class="link" href="./index.html">Studio</a>
+            </li>
+            <li class="list-item"><a class="link" href="">Portfolio</a></li>
+            <li class="list-item"><a class="link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="header-contact">
+          <ul class="contact-list">
+            <li class="list-item">
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+          <div class="social-list-container">
+            <ul class="social-list">
+              <li class="list-item">
+                <a href="#" class="social-link">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="social-link">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="social-link">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="social-link">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
       </div>
     </div>
   </body>
