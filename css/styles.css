@@ -1079,6 +1079,10 @@ section{
         width: auto;
     }
 
+    .section-four .list .overlay-container{
+        width: 288px;
+    }
+
     /* Tablet Footer */ 
 
     .footer {
@@ -1231,6 +1235,11 @@ section{
     }
 
     /* Modal Overlay for Mobile*/
+
+    .backdrop {
+        width: 100%;
+        height: 100%;
+    }
 
     .modal-window{
         padding: 72px 16px 24px 16px;
